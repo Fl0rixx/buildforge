@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Комплектующие | BuildForge</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-content">
+        <a href="./index.html" class="logo">BuildForge</a>
+
+        <nav class="nav">
+            <a href="./index.html">Главная</a>
+            <a href="./builds.html">Сборки</a>
+            <a href="./configurator.html">Конфигуратор</a>
+            <a href="./components.html">Комплектующие</a>
+            <a href="./compare.html">Сравнение</a>
+            <a href="./faq.html">FAQ</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label">Комплектующие</span>
+
+        <h1>
+            Подбери <span>железо</span><br>
+            для своей сборки
+        </h1>
+
+        <p>
+            Популярные процессоры, видеокарты, память и накопители
+            для игровых, рабочих и профессиональных ПК.
+        </p>
+    </div>
+</section>
+
+<section class="components-page">
+    <div class="container">
+
+        <div class="build-filters">
+            <button class="filter-btn active" data-component-filter="all">Все</button>
+            <button class="filter-btn" data-component-filter="cpu">CPU</button>
+            <button class="filter-btn" data-component-filter="gpu">GPU</button>
+            <button class="filter-btn" data-component-filter="ram">RAM</button>
+            <button class="filter-btn" data-component-filter="ssd">SSD</button>
+        </div>
+
+        <div class="components-grid">
+
+            <article class="component-card" data-component="cpu">
+                <span class="component-type">CPU</span>
+                <h3>Intel Core i5</h3>
+                <p>10 ядер • 16 потоков • до 4.6 GHz</p>
+
+                <div class="component-bottom">
+                    <strong>7 500 ₴</strong>
+                    <span>★ 4.6</span>
+                </div>
+            </article>
+
+            <article class="component-card" data-component="cpu">
+                <span class="component-type">CPU</span>
+                <h3>Ryzen 7 7800X3D</h3>
+                <p>8 ядер • 16 потоков • лучший выбор для игр</p>
+
+                <div class="component-bottom">
+                    <strong>16 000 ₴</strong>
+                    <span>★ 4.9</span>
+                </div>
+            </article>
+
+            <article class="component-card" data-component="gpu">
+                <span class="component-type">GPU</span>
+                <h3>RTX 4060</h3>
+                <p>8GB GDDR6 • Full HD гейминг</p>
+
+                <div class="component-bottom">
+                    <strong>14 000 ₴</strong>
+                    <span>★ 4.5</span>
+                </div>
+            </article>
+
+            <article class="component-card" data-component="gpu">
+                <span class="component-type">GPU</span>
+                <h3>RTX 4070 Super</h3>
+                <p>12GB GDDR6X • 2K gaming ready</p>
+
+                <div class="component-bottom">
+                    <strong>32 000 ₴</strong>
+                    <span>★ 4.8</span>
+                </div>
+            </article>
+
+            <article class="component-card" data-component="ram">
+                <span class="component-type">RAM</span>
+                <h3>32GB DDR5</h3>
+                <p>6000 MHz • высокая скорость</p>
+
+                <div class="component-bottom">
+                    <strong>5 500 ₴</strong>
+                    <span>★ 4.7</span>
+                </div>
+            </article>
+
+            <article class="component-card" data-component="ssd">
+                <span class="component-type">SSD</span>
+                <h3>2TB NVMe</h3>
+                <p>PCIe 4.0 • быстрые загрузки игр и проектов</p>
+
+                <div class="component-bottom">
+                    <strong>6 500 ₴</strong>
+                    <span>★ 4.8</span>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<script src="./js/script.js"></script>
+</body>
+</html>

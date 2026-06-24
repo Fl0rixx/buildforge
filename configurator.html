@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конфигуратор ПК | BuildForge</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+
+            <a href="./index.html" class="logo">
+                BuildForge
+            </a>
+
+            <nav class="nav">
+                <a href="./index.html">Главная</a>
+                <a href="./builds.html">Сборки</a>
+                <a href="./configurator.html">Конфигуратор</a>
+                <a href="./components.html">Комплектующие</a>
+                <a href="./compare.html">Сравнение</a>
+                <a href="./faq.html">FAQ</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-hero">
+            <div class="container">
+
+                <span class="section-label">
+                    Конфигуратор
+                </span>
+
+                <h1>
+                    Собери систему <span>под себя</span>
+                </h1>
+
+                <p>
+                    Выбирай комплектующие, сравнивай конфигурацию
+                    и сразу смотри итоговую стоимость сборки.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="configurator">
+            <div class="container configurator-content">
+
+                <div class="config-panel">
+
+                    <h2>Выбор комплектующих</h2>
+
+                    <div class="config-group">
+                        <label>Процессор</label>
+<select id="cpuSelect">
+    <option value="7500">Intel Core i5</option>
+    <option value="16000">Ryzen 7 7800X3D</option>
+    <option value="24000">Intel Core i9</option>
+</select>
+                    </div>
+
+                    <div class="config-group">
+                        <label>Видеокарта</label>
+                        <select id="gpuSelect">
+                            <option value="14000">RTX 4060</option>
+                            <option value="32000">RTX 4070 Super</option>
+                            <option value="85000">RTX 4090</option>
+                        </select>
+                    </div>
+
+                    <div class="config-group">
+                        <label>Оперативная память</label>
+                        <select id="ramSelect">
+                            <option value="2500">16GB DDR4</option>
+                            <option value="5500">32GB DDR5</option>
+                            <option value="10500">64GB DDR5</option>
+                        </select>
+                    </div>
+
+                    <div class="config-group">
+                        <label>SSD</label>
+                        <select id="ssdSelect">
+                            <option value="3500">1TB NVMe</option>
+                            <option value="6500">2TB NVMe</option>
+                            <option value="12000">4TB NVMe</option>
+                        </select>
+                    </div>
+
+                    <div class="config-group">
+                        <label>Блок питания</label>
+                        <select id="psuSelect">
+                            <option value="3000">650W Bronze</option>
+                            <option value="5000">750W Gold</option>
+                            <option value="9000">1000W Platinum</option>
+                        </select>
+                    </div>
+
+                    <div class="config-group">
+                        <label>Корпус</label>
+                        <select id="caseSelect">
+                            <option value="3500">Compact Airflow</option>
+                            <option value="5500">RGB Gaming Case</option>
+                            <option value="8500">Premium Glass Case</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <aside class="config-summary">
+
+                    <span class="section-label">
+                        Итоговая сборка
+                    </span>
+
+                    <h2>BuildForge Custom</h2>
+
+                    <div class="summary-list">
+
+                        <p>
+                            <span>CPU</span>
+                            <strong id="cpuResult">Intel Core i5 — 7 500 ₴</strong>
+                        </p>
+
+                        <p>
+                            <span>GPU</span>
+                            <strong id="gpuResult">RTX 4060 — 14 000 ₴</strong>
+                        </p>
+
+                        <p>
+                            <span>RAM</span>
+                            <strong id="ramResult">16GB DDR4 — 2 500 ₴</strong>
+                        </p>
+
+                        <p>
+                            <span>SSD</span>
+                            <strong id="ssdResult">1TB NVMe — 3 500 ₴</strong>
+                        </p>
+
+                        <p>
+                            <span>PSU</span>
+                            <strong id="psuResult">650W Bronze — 3 000 ₴</strong>
+                        </p>
+
+                        <p>
+                            <span>Case</span>
+                            <strong id="caseResult">Compact Airflow — 3 500 ₴</strong>
+                        </p>
+
+                    </div>
+
+                    <div class="summary-total">
+                        <span>Итоговая стоимость</span>
+                        <strong id="totalPrice">34 000 ₴</strong>
+                    </div>
+					
+					<div class="build-level">
+    <span>Уровень сборки</span>
+    <strong id="buildLevel">Budget</strong>
+
+    <div class="level-bar">
+        <div id="levelProgress"></div>
+    </div>
+</div>
+
+
+
+<div class="compatibility-box" id="compatibilityBox">
+    ✓ Все комплектующие совместимы
+</div>
+
+<div class="config-fps">
+    <h3>FPS в играх</h3>
+
+    <p>
+        <span>CS2</span>
+        <strong id="configFpsCs">250 FPS</strong>
+    </p>
+
+    <p>
+        <span>Fortnite</span>
+        <strong id="configFpsFortnite">120 FPS</strong>
+    </p>
+
+    <p>
+        <span>Cyberpunk 2077</span>
+        <strong id="configFpsCyberpunk">60 FPS</strong>
+    </p>
+</div>
+
+<button class="btn btn-primary" id="saveBuildBtn">
+    Сохранить сборку
+</button>
+
+                </aside>
+
+            </div>
+        </section>
+
+    </main>
+	
+	<div class="save-toast" id="saveToast">
+    Сборка сохранена
+</div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

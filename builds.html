@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Готовые сборки | BuildForge</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-content">
+        <a href="./index.html" class="logo">BuildForge</a>
+
+        <nav class="nav">
+            <a href="./index.html">Главная</a>
+            <a href="./builds.html">Сборки</a>
+            <a href="./configurator.html">Конфигуратор</a>
+            <a href="./components.html">Комплектующие</a>
+            <a href="./compare.html">Сравнение</a>
+            <a href="./faq.html">FAQ</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label">Готовые сборки</span>
+
+        <h1>
+            Найди идеальный <span>ПК</span><br>
+            под свои задачи
+        </h1>
+
+        <p>
+            От бюджетных игровых решений до профессиональных рабочих станций.
+            Подобрали лучшие конфигурации для любых сценариев использования.
+        </p>
+    </div>
+</section>
+
+<section class="builds-page">
+    <div class="container">
+
+        <div class="build-filters">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="games">Игры</button>
+            <button class="filter-btn" data-filter="streaming">Стриминг</button>
+            <button class="filter-btn" data-filter="content">Контент</button>
+            <button class="filter-btn" data-filter="work">Работа</button>
+        </div>
+
+        <div class="builds-grid">
+
+            <article class="build-card" data-category="games">
+                <img src="./images/starter-build.png" alt="Starter Build">
+
+                <h3>Starter Build</h3>
+
+                <ul>
+                    <li>Intel Core i5</li>
+                    <li>RTX 4060</li>
+                    <li>16GB DDR4</li>
+                </ul>
+
+                <div class="build-bottom">
+                    <strong>от 39 990 ₴</strong>
+
+                    <button
+                        class="build-link open-build-modal"
+                        data-title="Starter Build"
+                        data-image="./images/starter-build.png"
+                        data-price="от 39 990 ₴"
+                        data-description="Стартовая сборка для Full HD игр, учёбы и повседневной работы."
+                        data-cpu="Intel Core i5"
+                        data-gpu="RTX 4060"
+                        data-ram="16GB DDR4"
+                        data-ssd="1TB NVMe"
+                        data-cs="180"
+                        data-fortnite="95"
+                        data-cyberpunk="45"
+                    >
+                        Подробнее
+                    </button>
+                </div>
+            </article>
+
+            <article class="build-card" data-category="games">
+                <img src="./images/gaming-build.png" alt="Gaming Build">
+
+                <h3>Gaming Build</h3>
+
+                <ul>
+                    <li>Ryzen 7 7800X3D</li>
+                    <li>RTX 4070 Super</li>
+                    <li>32GB DDR5</li>
+                </ul>
+
+                <div class="build-bottom">
+                    <strong>от 79 990 ₴</strong>
+
+                    <button
+                        class="build-link open-build-modal"
+                        data-title="Gaming Build"
+                        data-image="./images/gaming-build.png"
+                        data-price="от 79 990 ₴"
+                        data-description="Сбалансированная игровая сборка для современных игр в Full HD и 2K."
+                        data-cpu="Ryzen 7 7800X3D"
+                        data-gpu="RTX 4070 Super"
+                        data-ram="32GB DDR5"
+                        data-ssd="1TB NVMe"
+                        data-cs="420"
+                        data-fortnite="220"
+                        data-cyberpunk="105"
+                    >
+                        Подробнее
+                    </button>
+                </div>
+            </article>
+
+            <article class="build-card" data-category="streaming">
+                <img src="./images/streamer-build.png" alt="Streamer Build">
+
+                <h3>Streamer Build</h3>
+
+                <ul>
+                    <li>Ryzen 7 7700</li>
+                    <li>RTX 4070 Ti</li>
+                    <li>32GB DDR5</li>
+                </ul>
+
+                <div class="build-bottom">
+                    <strong>от 94 990 ₴</strong>
+
+                    <button
+                        class="build-link open-build-modal"
+                        data-title="Streamer Build"
+                        data-image="./images/streamer-build.png"
+                        data-price="от 94 990 ₴"
+                        data-description="Сборка для игр, стриминга и записи контента без просадок."
+                        data-cpu="Ryzen 7 7700"
+                        data-gpu="RTX 4070 Ti"
+                        data-ram="32GB DDR5"
+                        data-ssd="2TB NVMe"
+                        data-cs="460"
+                        data-fortnite="250"
+                        data-cyberpunk="125"
+                    >
+                        Подробнее
+                    </button>
+                </div>
+            </article>
+
+            <article class="build-card" data-category="content">
+                <img src="./images/creator-build.png" alt="Pro Creator Build">
+
+                <h3>Pro Creator Build</h3>
+
+                <ul>
+                    <li>Intel Core i7</li>
+                    <li>RTX 4080</li>
+                    <li>64GB DDR5</li>
+                </ul>
+
+                <div class="build-bottom">
+                    <strong>от 119 990 ₴</strong>
+
+                    <button
+                        class="build-link open-build-modal"
+                        data-title="Pro Creator Build"
+                        data-image="./images/creator-build.png"
+                        data-price="от 119 990 ₴"
+                        data-description="Мощная сборка для монтажа, 3D, графики и профессиональных задач."
+                        data-cpu="Intel Core i7"
+                        data-gpu="RTX 4080"
+                        data-ram="64GB DDR5"
+                        data-ssd="2TB NVMe"
+                        data-cs="520"
+                        data-fortnite="280"
+                        data-cyberpunk="150"
+                    >
+                        Подробнее
+                    </button>
+                </div>
+            </article>
+
+            <article class="build-card" data-category="games">
+                <img src="./images/ultra-build.png" alt="Ultra Gaming Build">
+
+                <h3>Ultra Gaming Build</h3>
+
+                <ul>
+                    <li>Ryzen 9 7950X3D</li>
+                    <li>RTX 4090</li>
+                    <li>64GB DDR5</li>
+                </ul>
+
+                <div class="build-bottom">
+                    <strong>от 169 990 ₴</strong>
+
+                    <button
+                        class="build-link open-build-modal"
+                        data-title="Ultra Gaming Build"
+                        data-image="./images/ultra-build.png"
+                        data-price="от 169 990 ₴"
+                        data-description="Флагманская игровая сборка для 2K, 4K и максимальных настроек."
+                        data-cpu="Ryzen 9 7950X3D"
+                        data-gpu="RTX 4090"
+                        data-ram="64GB DDR5"
+                        data-ssd="2TB NVMe"
+                        data-cs="650"
+                        data-fortnite="360"
+                        data-cyberpunk="210"
+                    >
+                        Подробнее
+                    </button>
+                </div>
+            </article>
+
+            <article class="build-card" data-category="work">
+                <img src="./images/workstation-build.png" alt="Workstation Build">
+
+                <h3>Workstation Build</h3>
+
+                <ul>
+                    <li>Intel Core i9</li>
+                    <li>RTX 4090</li>
+                    <li>128GB DDR5</li>
+                </ul>
+
+                <div class="build-bottom">
+                    <strong>от 209 990 ₴</strong>
+
+                    <button
+                        class="build-link open-build-modal"
+                        data-title="Workstation Build"
+                        data-image="./images/workstation-build.png"
+                        data-price="от 209 990 ₴"
+                        data-description="Профессиональная рабочая станция для тяжёлых задач и больших проектов."
+                        data-cpu="Intel Core i9"
+                        data-gpu="RTX 4090"
+                        data-ram="128GB DDR5"
+                        data-ssd="4TB NVMe"
+                        data-cs="620"
+                        data-fortnite="330"
+                        data-cyberpunk="190"
+                    >
+                        Подробнее
+                    </button>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+</main>
+
+<div class="modal-overlay" id="buildModal">
+    <div class="build-modal">
+
+        <button class="modal-close" id="modalClose">×</button>
+
+        <div class="modal-image">
+            <img id="modalImage" src="./images/starter-build.png" alt="Build">
+        </div>
+
+        <div class="modal-info">
+            <span class="section-label">BuildForge</span>
+
+            <h2 id="modalTitle">Starter Build</h2>
+
+            <p id="modalDescription">Описание сборки</p>
+
+            <div class="modal-price" id="modalPrice">
+                от 39 990 ₴
+            </div>
+
+            <div class="build-rating">
+                ★ 4.9 • Рекомендуем
+            </div>
+
+            <div class="modal-specs">
+                <div>
+                    <span>CPU</span>
+                    <strong id="modalCpu">Intel Core i5</strong>
+                </div>
+
+                <div>
+                    <span>GPU</span>
+                    <strong id="modalGpu">RTX 4060</strong>
+                </div>
+
+                <div>
+                    <span>RAM</span>
+                    <strong id="modalRam">16GB DDR4</strong>
+                </div>
+
+                <div>
+                    <span>SSD</span>
+                    <strong id="modalSsd">1TB NVMe</strong>
+                </div>
+            </div>
+
+            <div class="fps-box">
+                <h3>
+                    Игровая производительность
+                    <span class="fps-quality">1080p Ultra</span>
+                </h3>
+
+                <div class="fps-list">
+                    <p>
+                        <span>CS2</span>
+                        <strong id="fpsCs">180 FPS</strong>
+                    </p>
+
+                    <p>
+                        <span>Fortnite</span>
+                        <strong id="fpsFortnite">95 FPS</strong>
+                    </p>
+
+                    <p>
+                        <span>Cyberpunk 2077</span>
+                        <strong id="fpsCyberpunk">45 FPS</strong>
+                    </p>
+                </div>
+            </div>
+
+            <a href="./configurator.html" class="btn btn-primary">
+                Собрать на базе
+            </a>
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>

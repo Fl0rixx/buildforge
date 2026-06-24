@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сравнение | BuildForge</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-content">
+        <a href="./index.html" class="logo">BuildForge</a>
+
+        <nav class="nav">
+            <a href="./index.html">Главная</a>
+            <a href="./builds.html">Сборки</a>
+            <a href="./configurator.html">Конфигуратор</a>
+            <a href="./components.html">Комплектующие</a>
+            <a href="./compare.html">Сравнение</a>
+            <a href="./faq.html">FAQ</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label">Сравнение</span>
+
+        <h1>
+            Сравни <span>комплектующие</span>
+        </h1>
+
+        <p>
+            Выбирай два процессора и смотри разницу по ядрам,
+            потокам, частоте, играм и рабочим задачам.
+        </p>
+    </div>
+</section>
+
+<section class="compare-page">
+    <div class="container">
+	
+	<div class="build-filters">
+<button class="filter-btn active" id="cpuCompareBtn">Процессоры</button>
+<button class="filter-btn" id="gpuCompareBtn">Видеокарты</button>
+</div>
+
+        <div class="compare-selects">
+
+            <div class="config-group">
+                <label id="compareLabelA">Первый процессор</label>
+                <select id="compareCpuA">
+                    <option value="i5">Intel Core i5</option>
+                    <option value="ryzen7">Ryzen 7 7800X3D</option>
+                    <option value="i9">Intel Core i9</option>
+                </select>
+            </div>
+
+            <div class="config-group">
+                <label id="compareLabelB">Второй процессор</label>
+                <select id="compareCpuB">
+                    <option value="ryzen7">Ryzen 7 7800X3D</option>
+                    <option value="i5">Intel Core i5</option>
+                    <option value="i9">Intel Core i9</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="compare-table">
+            <div class="compare-row compare-head">
+                <span>Характеристика</span>
+                <strong id="cpuAName">Intel Core i5</strong>
+                <strong id="cpuBName">Ryzen 7 7800X3D</strong>
+            </div>
+
+            <div class="compare-row">
+                <span>Ядра</span>
+                <strong id="cpuACores">10</strong>
+                <strong id="cpuBCores">8</strong>
+            </div>
+
+            <div class="compare-row">
+                <span>Потоки</span>
+                <strong id="cpuAThreads">16</strong>
+                <strong id="cpuBThreads">16</strong>
+            </div>
+
+            <div class="compare-row">
+                <span>Частота</span>
+                <strong id="cpuAFrequency">4.6 GHz</strong>
+                <strong id="cpuBFrequency">5.0 GHz</strong>
+            </div>
+
+            <div class="compare-row">
+                <span>Игры</span>
+                <strong id="cpuAGaming">⭐⭐⭐⭐</strong>
+                <strong id="cpuBGaming">⭐⭐⭐⭐⭐</strong>
+            </div>
+
+            <div class="compare-row">
+                <span>Работа</span>
+                <strong id="cpuAWork">⭐⭐⭐</strong>
+                <strong id="cpuBWork">⭐⭐⭐⭐</strong>
+            </div>
+
+            <div class="compare-row">
+                <span>Цена</span>
+                <strong id="cpuAPrice">7 500 ₴</strong>
+                <strong id="cpuBPrice">16 000 ₴</strong>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
